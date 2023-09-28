@@ -1,0 +1,111 @@
+@font-face {
+  font-family: Medium500;
+  src: url(/assets/font/Jost-Medium.ttf);
+}
+@font-face {
+  font-family: Regular400;
+  src: url(/assets/font/Jost-Regular.ttf);
+}
+a {
+  text-decoration: none;
+}
+
+header .header-top {
+  padding: 10px 0;
+  border-bottom: 1px solid #dee0ea;
+}
+header .header-top .social-media span {
+  font-family: Medium500;
+  font-size: 13px;
+}
+header .header-top .social-media i {
+  margin-left: 5px;
+}
+header .header-top .social-media .medias {
+  position: absolute;
+  z-index: 1;
+  margin-top: 12px;
+  background-color: white;
+  padding: 10px;
+  width: 15%;
+  border: 1px solid #dee0ea;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+header .header-top .social-media .medias a {
+  display: block;
+  font-family: Regular400;
+  font-size: 14px;
+  color: #212529;
+  margin: 10px 0;
+}
+header .header-top .social-media .medias a i {
+  padding: 0 10px;
+}
+header .header-top .social-media .medias p {
+  font-family: Regular400;
+  font-size: 13px;
+  color: #212529;
+  opacity: 0.4;
+  padding: 0 10px;
+}
+header .header-top .offer span {
+  font-family: Regular400;
+  font-size: 13px;
+}
+header .header-top .offer a {
+  font-family: Medium500;
+  font-size: 13px;
+  color: #ee403d;
+}
+header .header-top .right-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+header .header-top .right-menu a {
+  font-family: Regular400;
+  font-size: 13px;
+  margin-top: 4px;
+  color: black;
+}
+header .header-top .right-menu .language {
+  position: relative;
+  margin-right: 20px;
+}
+header .header-top .right-menu .language .lang-box {
+  position: absolute;
+  z-index: 1;
+  right: 15px;
+  margin-top: 10px;
+  padding: 10px 60px 10px 10px;
+  border: 1px solid #dee0ea;
+  background-color: white;
+}
+header .header-top .right-menu .language a {
+  font-family: Regular400;
+  font-size: 13px;
+  margin-right: 20px;
+}
+header .header-top .right-menu .language span i {
+  font-size: 10px;
+}
+header .header-top .right-menu .usd {
+  position: relative;
+}
+header .header-top .right-menu .usd .usd-box {
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  margin-top: 10px;
+  padding: 10px 80px 10px 10px;
+  border: 1px solid #dee0ea;
+  background-color: white;
+}
+header .header-top .right-menu span {
+  font-family: Regular400;
+  font-size: 13px;
+  margin-left: 20px;
+}
+header .header-top .right-menu h4 {
+  font-family: Regular400;
+  font-size: 13px;
+}/*# sourceMappingURL=home.css.map */
