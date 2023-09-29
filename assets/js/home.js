@@ -46,12 +46,13 @@ over.addEventListener("click", function(){
 })
 
 let searchIcon=document.querySelector(".icons .search i")
-let searchBox=document.querySelector(".search-modal")
+
 let closeSearchIcon=document.querySelector(".icons .close")
 
 searchIcon.addEventListener("click", function(){
     this.classList.add("d-none");
     closeSearchIcon.classList.remove("d-none")
+    searchModal.classList.remove("d-none");
 })
 
 
@@ -64,9 +65,6 @@ closeSearchIcon.addEventListener("click", function(e){
 
 
 })
-
-
-
 
 
 
