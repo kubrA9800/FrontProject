@@ -8,6 +8,92 @@
     src: url(/assets/font/Jost-Regular.ttf);
 }
 
+
+
+@media only screen and (max-width: 768px) {
+    .header-top {
+        display: none;
+    }
+
+    .header-bottom {
+
+        .logo {
+            text-align: center;
+            justify-content: space-between;
+
+            .image {
+                width: 50%;
+
+                img {
+                    width: 40% !important;
+                }
+            }
+
+        }
+    }
+
+    .nav-all {
+        display: none !important;
+    }
+
+    .icons .login,
+    .search,
+    .wishlist {
+        display: none;
+    }
+
+    .sidebar {
+        width: 50% !important;
+
+        a {
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    .header-top {
+        display: none;
+    }
+
+    .header-bottom {
+        .logo {
+            text-align: center;
+            justify-content: space-between;
+
+            .image {
+                width: 50%;
+
+                img {
+                    width: 40% !important;
+                }
+            }
+
+        }
+    }
+
+    .nav-all {
+        display: none !important;
+    }
+
+    .icons .login,
+    .search,
+    .wishlist {
+        display: none;
+    }
+
+    .sidebar {
+        width: 50% !important;
+    }
+    
+
+}
+
+@media only screen and (min-width: 992px) {
+    
+}
+
 a {
     text-decoration: none;
 }
@@ -21,7 +107,7 @@ header {
             span {
                 font-family: Medium500;
                 font-size: 13px;
-
+                cursor: pointer;
             }
 
             i {
@@ -38,6 +124,7 @@ header {
                 width: 15%;
                 border: 1px solid #dee0ea;
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
                 a {
                     display: block;
                     font-family: Regular400;
@@ -49,7 +136,8 @@ header {
                         padding: 0 10px;
                     }
                 }
-                p{
+
+                p {
                     font-family: Regular400;
                     font-size: 13px;
                     color: #212529;
@@ -88,6 +176,7 @@ header {
             .language {
                 position: relative;
                 margin-right: 20px;
+                cursor: pointer;
 
                 .lang-box {
                     position: absolute;
@@ -116,6 +205,7 @@ header {
 
             .usd {
                 position: relative;
+                cursor: pointer;
 
                 .usd-box {
                     position: absolute;
@@ -138,6 +228,232 @@ header {
                 font-family: Regular400;
                 font-size: 13px;
             }
+        }
+    }
+
+    .header-bottom {
+
+        padding: 20px 0;
+        border-bottom: 1px solid #dee0ea;
+
+        .overlay {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+
+            .move-sidebar {
+                transform: translate(-540px, 0);
+            }
+
+            .sidebar {
+
+                position: fixed;
+                top: 0;
+                left: 0;
+                transition: .5s;
+                background-color: White;
+                width: 22%;
+                height: 100vh;
+                padding: 15px 25px;
+                z-index: 5 !important;
+
+                &::-webkit-scrollbar {
+                    width: 10px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: gray
+                }
+
+                .sidebar-top {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+
+                    .logo-image {
+                        width: 90%;
+
+                        img {
+                            width: 45%;
+                        }
+                    }
+                }
+
+                .text {
+                    .box {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                }
+
+                .close-icon {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 7px;
+                    font-size: 15px;
+                    cursor: pointer;
+                    background-color: #dee0ea;
+                }
+
+                h4 {
+                    font-family: Medium500;
+                    font-size: 15px;
+                }
+
+                a {
+                    display: block;
+                    color: black;
+                    font-family: Regular400;
+                    font-size: 16px;
+                    margin: 12px 0;
+                }
+
+            }
+
+            i {
+                margin-right: 20px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            .image {
+                width: 80%;
+
+                img {
+                    width: 80%;
+                }
+            }
+        }
+
+        .nav-all {
+            position: relative;
+            display: flex;
+
+            a {
+                font-family: Medium500;
+                font-size: 15px;
+                color: black;
+                margin-right: 30px;
+
+                i {
+                    margin-left: 2px;
+                }
+            }
+
+            .home {
+
+                display: flex;
+
+                .home-box {
+                    position: absolute;
+                    top: 50px;
+                    left: -20px;
+                    padding: 10px 150px 10px 20px;
+                    background-color: white;
+                    border: 1px solid #dee0ea;
+
+                    a {
+
+                        display: block;
+                        margin: 10px 0;
+                        font-family: Regular400;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .shop {
+                display: flex;
+
+                .shop-box {
+                    position: absolute;
+                    left: -220px;
+                    top: 50px;
+                    background-color: white;
+                    border: 1px solid #dee0ea;
+                    width: 1300px;
+                    padding: 20px 30px;
+
+                    .list {
+                        width: 100%;
+
+                        a {
+
+                            display: block;
+                            margin: 10px 0;
+                            font-family: Regular400;
+                            font-size: 15px;
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+        .icons {
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+
+            div {
+                margin-left: 20px;
+                font-size: 20px;
+            }
+
+
+            a {
+                position: relative;
+                color: black;
+
+                .count {
+                    position: absolute;
+                    top: -5px;
+                    right: -6px;
+                    font-size: 10px;
+                    color: white;
+                    background-color: #ee403d;
+                    padding: 1px 4px;
+                    border-radius: 50%;
+                }
+
+                span {
+                    font-family: Regular400;
+                    font-size: 13px;
+                }
+            }
+
+            .close {
+                position: absolute;
+                right: 127px;
+                top: 5px;
+                font-size: 20px;
+            }
+        }
+
+        .search-modal {
+            position: absolute;
+            left: 100px;
+            width: 100%;
+            height: 100vh;
+            z-index: 2;
+            overflow-x: hidden;
+            border: 1px solid #dee0ea;
+            background-color: white;
+
         }
     }
 }
