@@ -1,11 +1,11 @@
 @font-face {
     font-family: Medium500;
-    src: url(/assets/font/Jost-Medium.ttf)
+    src: url(../font/Jost-Medium.ttf)
 }
 
 @font-face {
     font-family: Regular400;
-    src: url(/assets/font/Jost-Regular.ttf);
+    src: url(../font/Jost-Regular.ttf);
 }
 
 
@@ -50,6 +50,14 @@
             justify-content: flex-start;
         }
     }
+    .icons{
+        .close{
+            display: none;
+        }
+    }
+    .search-modal{
+        width: 50%;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {
@@ -86,13 +94,19 @@
     .sidebar {
         width: 50% !important;
     }
-    
+
+    .search-modal{
+        width: 70%;
+    }
+    .icons{
+        .close{
+            display: none;
+        }
+    }
 
 }
 
-@media only screen and (min-width: 992px) {
-    
-}
+@media only screen and (min-width: 992px) {}
 
 a {
     text-decoration: none;
@@ -176,6 +190,7 @@ header {
             .language {
                 position: relative;
                 margin-right: 20px;
+                z-index: 3;
                 cursor: pointer;
 
                 .lang-box {
@@ -206,6 +221,7 @@ header {
             .usd {
                 position: relative;
                 cursor: pointer;
+                z-index: 3;
 
                 .usd-box {
                     position: absolute;
@@ -438,21 +454,67 @@ header {
 
             .close {
                 position: absolute;
-                right: 127px;
+                right: 115px;
                 top: 5px;
                 font-size: 20px;
+                
+                cursor: pointer;
+            }
+
+            .search {
+               
+                cursor: pointer;
             }
         }
 
         .search-modal {
             position: absolute;
+            top: 140px;
             left: 100px;
-            width: 100%;
+            width: 86%;
             height: 100vh;
             z-index: 2;
             overflow-x: hidden;
-            border: 1px solid #dee0ea;
-            background-color: white;
+            
+            background-color: red;
+
+            .title {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                font-family: Regular400;
+                font-size: 16px;
+                a{
+                    color: #212529;
+                }
+               i{
+                cursor: pointer;
+               } 
+            }
+            .input{
+                border-bottom: 2px solid #aeaeae;
+                input {
+                    width: 100%;
+                    border: none;
+                    margin-top: 20px;
+                    outline: none;
+                    ::placeholder {
+                        font-family: Regular400;
+                        font-size: 15px;
+                    }
+                }
+                i{
+                    margin-top: 15px;
+                    margin-right: 10px;
+                }
+            }
+           
+            p{
+                font-family: Regular400;
+                    font-size: 14px;
+                    opacity: .4;
+                    margin-top: 20px;
+            }
 
         }
     }

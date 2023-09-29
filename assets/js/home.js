@@ -45,15 +45,29 @@ over.addEventListener("click", function(){
     this.style.display = "none";
 })
 
-let searchIcon=document.querySelector(".icons .search")
+let searchIcon=document.querySelector(".icons .search i")
 let searchBox=document.querySelector(".search-modal")
-let closeSearchIcon=docuument.querySelector(".icons .close")
+let closeSearchIcon=document.querySelector(".icons .close")
 
-searchBox.addEventListener("click", function(){
-    this.classList.add("d-none")
-    
+searchIcon.addEventListener("click", function(){
+    this.classList.add("d-none");
+    closeSearchIcon.classList.remove("d-none")
+})
+
+
+let searchModal=document.querySelector(".search-modal")
+
+closeSearchIcon.addEventListener("click", function(e){
+    this.classList.add("d-none");
+    searchIcon.classList.remove("d-none")
+    searchModal.classList.add("d-none");
+
 
 })
+
+
+
+
 
 
 

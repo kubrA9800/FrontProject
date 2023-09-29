@@ -1,10 +1,10 @@
 @font-face {
   font-family: Medium500;
-  src: url(/assets/font/Jost-Medium.ttf);
+  src: url(../font/Jost-Medium.ttf);
 }
 @font-face {
   font-family: Regular400;
-  src: url(/assets/font/Jost-Regular.ttf);
+  src: url(../font/Jost-Regular.ttf);
 }
 @media only screen and (max-width: 768px) {
   .header-top {
@@ -35,6 +35,12 @@
     display: flex;
     justify-content: flex-start;
   }
+  .icons .close {
+    display: none;
+  }
+  .search-modal {
+    width: 50%;
+  }
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
   .header-top {
@@ -60,6 +66,12 @@
   }
   .sidebar {
     width: 50% !important;
+  }
+  .search-modal {
+    width: 70%;
+  }
+  .icons .close {
+    display: none;
   }
 }
 a {
@@ -127,6 +139,7 @@ header .header-top .right-menu a {
 header .header-top .right-menu .language {
   position: relative;
   margin-right: 20px;
+  z-index: 3;
   cursor: pointer;
 }
 header .header-top .right-menu .language .lang-box {
@@ -149,6 +162,7 @@ header .header-top .right-menu .language span i {
 header .header-top .right-menu .usd {
   position: relative;
   cursor: pointer;
+  z-index: 3;
 }
 header .header-top .right-menu .usd .usd-box {
   position: absolute;
@@ -334,17 +348,61 @@ header .header-bottom .icons a span {
 }
 header .header-bottom .icons .close {
   position: absolute;
-  right: 127px;
+  right: 115px;
   top: 5px;
   font-size: 20px;
+  cursor: pointer;
+}
+header .header-bottom .icons .search {
+  cursor: pointer;
 }
 header .header-bottom .search-modal {
   position: absolute;
+  top: 140px;
   left: 100px;
-  width: 100%;
+  width: 86%;
   height: 100vh;
   z-index: 2;
   overflow-x: hidden;
-  border: 1px solid #dee0ea;
-  background-color: white;
+  background-color: red;
+}
+header .header-bottom .search-modal .title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-family: Regular400;
+  font-size: 16px;
+}
+header .header-bottom .search-modal .title a {
+  color: #212529;
+}
+header .header-bottom .search-modal .title i {
+  cursor: pointer;
+}
+header .header-bottom .search-modal .input {
+  border-bottom: 2px solid #aeaeae;
+}
+header .header-bottom .search-modal .input input {
+  width: 100%;
+  border: none;
+  margin-top: 20px;
+  outline: none;
+}
+header .header-bottom .search-modal .input input ::-moz-placeholder {
+  font-family: Regular400;
+  font-size: 15px;
+}
+header .header-bottom .search-modal .input input ::placeholder {
+  font-family: Regular400;
+  font-size: 15px;
+}
+header .header-bottom .search-modal .input i {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+header .header-bottom .search-modal p {
+  font-family: Regular400;
+  font-size: 14px;
+  opacity: 0.4;
+  margin-top: 20px;
 }/*# sourceMappingURL=home.css.map */
