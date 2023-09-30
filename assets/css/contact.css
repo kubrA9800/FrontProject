@@ -6,6 +6,10 @@
   font-family: Regular400;
   src: url(../font/Jost-Regular.ttf);
 }
+@font-face {
+  font-family: Bold600;
+  src: url(../font/Jost-SemiBold.ttf);
+}
 @media only screen and (max-width: 768px) {
   .header-top {
     display: none;
@@ -47,8 +51,8 @@
   .slide-image .text .text {
     width: 30%;
   }
-  #contact .right {
-    margin-left: 0 !important;
+  #contact .contact-box .left {
+    top: 0px !important;
   }
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
@@ -88,8 +92,8 @@
   .slide-image .text .text {
     width: 30%;
   }
-  #contact .right {
-    margin-left: 0 !important;
+  #contact .contact-box .left {
+    top: 0px !important;
   }
 }
 a {
@@ -523,4 +527,80 @@ header .header-bottom .search-modal p {
 }
 #contact .content .contact-box .right .information:nth-child(2) {
   margin-top: 30px;
+}
+
+footer .top {
+  background-color: black;
+  padding: 60px 100px;
+}
+footer .top h2 {
+  font-family: Medium500;
+  font-size: 30px;
+  color: white;
+}
+footer .top h5 {
+  font-family: Regular400;
+  font-size: 16px;
+  font-weight: 700;
+  color: #5E5E5E;
+  margin-bottom: 30px;
+}
+footer .top .input {
+  margin-bottom: 10px;
+}
+footer .top .input input {
+  border: none;
+  outline: none;
+  height: 45px;
+  width: 60%;
+}
+footer .top .input button {
+  background-color: black;
+  border: 1px solid white !important;
+  border-radius: 2px;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  transition: all 0.4s;
+}
+footer .top .input button:hover {
+  background-color: #949393;
+}
+footer .top h6 {
+  font-family: Medium500;
+  font-size: 12px;
+  color: #75767c;
+  margin-bottom: 30px;
+}
+footer .bottom {
+  padding: 60px 100px;
+}
+footer .bottom .left {
+  width: 70%;
+}
+footer .bottom .left .logo {
+  width: 100%;
+}
+footer .bottom .left .logo img {
+  width: 45%;
+}
+footer .bottom .left p {
+  font-family: Regular400;
+  font-size: 14px;
+  margin: 20px 0;
+}
+footer .bottom .left h3 {
+  font-family: Regular400;
+  font-size: 14px;
+}
+footer .bottom h4 {
+  font-family: Bold600;
+  font-size: 16px;
+}
+footer .bottom a {
+  font-family: Regular400;
+  font-size: 15px;
+  display: block;
+  color: black;
+  margin: 5px 0;
 }/*# sourceMappingURL=contact.css.map */
