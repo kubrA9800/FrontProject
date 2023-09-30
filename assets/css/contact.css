@@ -54,6 +54,12 @@
   #contact .contact-box .left {
     top: 0px !important;
   }
+  #contact .contact-box .left .inputs {
+    width: 100% !important;
+  }
+  footer .policy a {
+    display: none;
+  }
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
   .header-top {
@@ -94,6 +100,17 @@
   }
   #contact .contact-box .left {
     top: 0px !important;
+  }
+  #contact .contact-box .left .inputs {
+    width: 100% !important;
+  }
+  footer .policy a {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #contact .inputs-top {
+    display: flex !important;
   }
 }
 a {
@@ -603,4 +620,17 @@ footer .bottom a {
   display: block;
   color: black;
   margin: 5px 0;
+}
+footer .policy {
+  padding: 60px 100px;
+}
+footer .policy p {
+  font-family: Regular400;
+  font-size: 13px;
+}
+footer .policy a {
+  color: black;
+  font-family: Regular400;
+  font-size: 13px;
+  margin: 0 15px;
 }/*# sourceMappingURL=contact.css.map */
