@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,8 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
-    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
 </head>
+
 <body>
     <header>
         <div class="header-top">
@@ -95,15 +97,12 @@
                                         <a href="">Shop</a>
                                         <i style="font-size: 12px;" class="fa-solid fa-angle-down"></i>
                                     </div>
-                                    <div class="links">
-                                        <a href="">Women</a>
-                                        <a href="">Men</a>
-                                        <a href="">Outwear</a>
-                                        <a href="">Blog</a>
-                                        <a href="">Contact</a>
-                                    </div>
 
-                                   
+                                    <a href="">Women</a>
+                                    <a href="">Men</a>
+                                    <a href="">Outwear</a>
+                                    <a href="">Blog</a>
+                                    <a href="contact.html">Contact</a>
                                 </div>
                                 <hr>
                                 <div class="text">
@@ -116,6 +115,7 @@
                                         <a href="">Women</a>
                                         <i style="font-size: 12px;" class="fa-solid fa-angle-down"></i>
                                     </div>
+
                                     <a href="">Kids</a>
                                     <a href="">Baby</a>
                                     <a href="">Shoes</a>
@@ -257,56 +257,67 @@
     </header>
 
     <main>
-        <section id="login-registr-all">
-            <div class="form-all">
-                <div class="head">
-                    <h2  style="margin-left: 40px;">LOGIN</h2>
-                    <h2 class="none-active" style="margin-right: 40px;">REGISTER</h2>
-                </div>
-                <div class="login box">
-                    <div class="form">
-                        <div class="username-input">
-                            <h4>Username or email address *</h4>
-                            <input class="inputs" type="text">
+        <section id="contact">
+            <div class="content">
+                <img src="./assets/images/contact.jpg" alt="">
+                <div class="container">
+                    <div class="contact-box">
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-8">
+                                <div class="left">
+                                    <div class="text">
+                                        <h2>Contact with us</h2>
+                                        <h1>Get In Touch</h1>
+                                        <p>In hac habitasse platea dictumst. Pellentesque viverra sem nec orci lacinia,
+                                            in bibendum urna mollis. Quisque nunc lacus, varius vel leo a, pretium
+                                            lobortis metus. Vivamus consectetur consequat justo.</p>
+                                    </div>
+                                    <div class="inputs-top d-flex">
+                                        <div class="input w-100">
+                                            <h4>Your name *</h4>
+                                            <input class="inputs" type="text" name="" id="">
+                                        </div>
+                                        <div class="input w-100">
+                                            <h4>Your email *</h4>
+                                            <input class="inputs" type="text" name="" id="">
+                                        </div>
+                                    </div>
+                                    <div class="input">
+                                        <h4>Subject *</h4>
+                                        <input class="inputs" type="text" name="" id="">
+                                    </div>
+                                    <div class="input">
+                                        <h4>Your message *</h4>
+                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    </div>
+                                    <button>Send Message</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4">
+                                <div class="right">
+                                    <div class="information">
+                                        <h2><i class="fa-solid fa-store"></i>Clotya Store</h2>
+                                        <h3>Germany — 785 15h Street, Office 478/B Green Mall Berlin, De 81566</h3>
+                                        <h3>Phone: +1 1234 567 88</h3>
+                                        <h3>Email: <span>contact@example.com</span></h3>
+                                    </div>
+                                    <div class="information">
+                                        <h2><i class="fa-solid fa-store"></i>Opening Hours</h2>
+                                        <h3>Monday - Friday : 9am - 5pm</h3>
+                                        <h3>Weekend Closed</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="password-input mt-3">
-                            <h4>Password *</h4>
-                            <input class="inputs" type="password">
-                        </div>
-                        <input type="checkbox" name="" id="remember"> 
-                        <label for="remember">Remember me</label>
-                        <div class="button">
-                            <button>Log in</button>
-                        </div>
-                        <a href="">Lost your password?</a>
                     </div>
-                </div>
-                <div class="register box active-form">
-                    <div class="form">
-                        <div class="username-input">
-                            <h4>Username *</h4>
-                            <input class="inputs" type="text">
-                        </div>
-                        <div class="email-input mt-3">
-                            <h4>Email address *</h4>
-                            <input class="inputs" type="text">
-                        </div>
-                        <div class="password-input mt-3">
-                            <h4>Password *</h4>
-                            <input class="inputs" type="password">
-                        </div>
-                        <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <span>privacy policy.</span></p>
-                        <div class="button">
-                            <button>Register</button>
-                        </div>
-                    </div>
-    
                 </div>
             </div>
-           
-        </section>
-    </main>
 
+        </section>
+
+
+
+    </main>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -318,6 +329,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
         integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/contact.js"></script>
 </body>
+
 </html>

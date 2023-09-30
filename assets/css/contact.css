@@ -6,10 +6,6 @@
   font-family: Regular400;
   src: url(../font/Jost-Regular.ttf);
 }
-@font-face {
-  font-family: Bold600;
-  src: url(../font/Jost-SemiBold.ttf);
-}
 @media only screen and (max-width: 768px) {
   .header-top {
     display: none;
@@ -51,6 +47,9 @@
   .slide-image .text .text {
     width: 30%;
   }
+  #contact .right {
+    margin-left: 0 !important;
+  }
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
   .header-top {
@@ -88,6 +87,9 @@
   }
   .slide-image .text .text {
     width: 30%;
+  }
+  #contact .right {
+    margin-left: 0 !important;
   }
 }
 a {
@@ -430,78 +432,95 @@ header .header-bottom .search-modal p {
   margin-top: 20px;
 }
 
-#login-registr-all .none-active {
-  color: #aeaeae;
+#contact .content {
+  width: 100%;
 }
-#login-registr-all .form-all {
+#contact .content img {
+  width: 100%;
+}
+#contact .content .contact-box .left {
+  padding: 60px;
   position: relative;
-  margin: 70px auto;
-  width: 33%;
-  padding: 50px 50px 120px 50px;
-  border: 1px solid #E7E9F0;
+  top: -185px;
+  background-color: white;
 }
-#login-registr-all .form-all .head {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 50px;
-}
-#login-registr-all .form-all .head h2 {
-  font-family: Bold600;
-  font-size: 17px;
-  cursor: pointer;
-}
-#login-registr-all .form-all .box h4,
-#login-registr-all .form-all .box label {
+#contact .content .contact-box .left .text h2 {
   font-family: Regular400;
-  font-size: 14px;
+  font-size: 18px;
+  color: #ee403d;
 }
-#login-registr-all .form-all .box label {
+#contact .content .contact-box .left .text h1 {
+  font-family: Medium500;
+  font-size: 40px;
+}
+#contact .content .contact-box .left .text p {
   font-family: Regular400;
-  font-size: 14px;
-  margin: 15px 0;
+  font-size: 16px;
 }
-#login-registr-all .form-all .box .inputs {
+#contact .content .contact-box .left .input {
+  margin-top: 20px;
+}
+#contact .content .contact-box .left .inputs {
   width: 100%;
   height: 40px;
-  border: 2px solid #ECECEC;
+  border: 1px solid #DDDDDD;
   outline: none;
   border-radius: 3px;
 }
-#login-registr-all .form-all .box .inputs:focus {
+#contact .content .contact-box .left .inputs:focus {
   border: 1px solid #949393;
 }
-#login-registr-all .form-all .box button {
+#contact .content .contact-box .left h4 {
+  font-family: Regular400;
+  font-size: 14px;
+}
+#contact .content .contact-box .left .inputs-top {
+  margin-top: 30px;
+}
+#contact .content .contact-box .left .inputs-top input {
+  width: 95%;
+}
+#contact .content .contact-box .left textarea {
   width: 100%;
-  color: white;
-  background-color: #ee403d;
+  border: 1px solid #DDDDDD;
+  outline: none;
+  border-radius: 3px;
+}
+#contact .content .contact-box .left textarea:focus {
+  border: 1px solid #949393;
+}
+#contact .content .contact-box .left button {
   font-family: Medium500;
   font-size: 15px;
-  padding: 8px 15px;
   border: none;
+  background-color: #F0F0F0;
+  border: 1px solid #DDDDDD;
   border-radius: 2px;
-  margin-bottom: 15px;
-  transition: 0.3s;
+  color: black;
+  margin-top: 20px;
+  padding: 10px;
 }
-#login-registr-all .form-all .box button:hover {
-  background-color: #F16664;
+#contact .content .contact-box .right {
+  padding: 70px;
 }
-#login-registr-all .form-all .box a {
+#contact .content .contact-box .right .information i {
+  color: #ee403d;
+  font-size: 20px;
+  margin-right: 10px;
+}
+#contact .content .contact-box .right .information h2 {
+  font-family: Medium500;
+  font-size: 15px;
+}
+#contact .content .contact-box .right .information h3 {
   font-family: Regular400;
-  font-size: 16px;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+#contact .content .contact-box .right .information h3 span {
   color: #ee403d;
 }
-#login-registr-all .form-all .box a:hover {
-  color: #0A58CA;
-}
-#login-registr-all .form-all .box p {
-  font-family: Regular400;
-  font-size: 13px;
-  margin-top: 15px;
-}
-#login-registr-all .form-all .box p span {
-  color: #ee403d;
-}
-#login-registr-all .form-all .register {
-  position: absolute;
-  top: 129px;
-}/*# sourceMappingURL=login.css.map */
+#contact .content .contact-box .right .information:nth-child(2) {
+  margin-top: 30px;
+}/*# sourceMappingURL=contact.css.map */
