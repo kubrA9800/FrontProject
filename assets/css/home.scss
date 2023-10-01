@@ -264,7 +264,9 @@ header {
     }
 
     .header-bottom {
-
+        .link{
+            padding: 30px 0;
+        }
         
         border-bottom: 1px solid #dee0ea;
 
@@ -278,7 +280,7 @@ header {
             right: 0;
             bottom: 0;
             background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
+            z-index: 4;
         }
 
         .logo {
@@ -374,9 +376,7 @@ header {
             position: relative;
             display: flex;
             align-items: center;
-            .link{
-                padding: 30px 0;
-            }
+            
             a {
                 font-family: Medium500;
                 font-size: 15px;
@@ -443,7 +443,32 @@ header {
             position: relative;
             display: flex;
             justify-content: flex-end;
-
+            .basket{
+                a{
+                    position: relative;
+                }
+                .basket-box{
+                    position: absolute;
+                    background-color: white;
+                    border: 1px solid #dee0ea;
+                    z-index: 6;
+                    right: 0px;
+                    top: 40px;
+                    text-align: center;
+                    padding: 20px 60px;
+                    border-radius: 3px;
+                    i{
+                        font-size: 50px;
+                        margin-bottom: 20px;
+                        color: #ee403d;
+                    }
+                    h4{
+                        font-family: Medium500;
+                        font-size: 14px;
+                    }
+                }
+            }
+            
             div {
                 margin-left: 20px;
                 font-size: 20px;
@@ -456,7 +481,7 @@ header {
 
                 .count {
                     position: absolute;
-                    top: -5px;
+                    top: 25px;
                     right: -6px;
                     font-size: 10px;
                     color: white;

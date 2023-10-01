@@ -51,6 +51,9 @@
   .slide-image .text .text {
     width: 30%;
   }
+  footer .policy a {
+    display: none;
+  }
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
   .header-top {
@@ -88,6 +91,9 @@
   }
   .slide-image .text .text {
     width: 30%;
+  }
+  footer .policy a {
+    display: none;
   }
 }
 a {
@@ -201,6 +207,9 @@ header .header-top .right-menu h4 {
 header .header-bottom {
   border-bottom: 1px solid #dee0ea;
 }
+header .header-bottom .link {
+  padding: 30px 0;
+}
 header .header-bottom .overlay {
   position: fixed;
   display: none;
@@ -289,9 +298,6 @@ header .header-bottom .nav-all {
   display: flex;
   align-items: center;
 }
-header .header-bottom .nav-all .link {
-  padding: 30px 0;
-}
 header .header-bottom .nav-all a {
   font-family: Medium500;
   font-size: 15px;
@@ -346,6 +352,29 @@ header .header-bottom .icons {
   display: flex;
   justify-content: flex-end;
 }
+header .header-bottom .icons .basket a {
+  position: relative;
+}
+header .header-bottom .icons .basket .basket-box {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #dee0ea;
+  z-index: 6;
+  right: 0px;
+  top: 40px;
+  text-align: center;
+  padding: 20px 60px;
+  border-radius: 3px;
+}
+header .header-bottom .icons .basket .basket-box i {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #ee403d;
+}
+header .header-bottom .icons .basket .basket-box h4 {
+  font-family: Medium500;
+  font-size: 14px;
+}
 header .header-bottom .icons div {
   margin-left: 20px;
   font-size: 20px;
@@ -356,7 +385,7 @@ header .header-bottom .icons a {
 }
 header .header-bottom .icons a .count {
   position: absolute;
-  top: -5px;
+  top: 25px;
   right: -6px;
   font-size: 10px;
   color: white;
@@ -430,25 +459,26 @@ header .header-bottom .search-modal p {
   margin-top: 20px;
 }
 
-#login-registr-all .none-active {
-  color: #aeaeae;
-}
 #login-registr-all .form-all {
-  position: relative;
   margin: 70px auto;
   width: 33%;
   padding: 50px 50px 120px 50px;
   border: 1px solid #E7E9F0;
+  height: 600px;
 }
 #login-registr-all .form-all .head {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 50px;
 }
+#login-registr-all .form-all .head .active {
+  color: black;
+}
 #login-registr-all .form-all .head h2 {
   font-family: Bold600;
   font-size: 17px;
   cursor: pointer;
+  color: rgba(0, 0, 0, 0.321);
 }
 #login-registr-all .form-all .box h4,
 #login-registr-all .form-all .box label {
@@ -501,7 +531,92 @@ header .header-bottom .search-modal p {
 #login-registr-all .form-all .box p span {
   color: #ee403d;
 }
-#login-registr-all .form-all .register {
-  position: absolute;
-  top: 129px;
+
+footer .top {
+  background-color: black;
+  padding: 60px 100px;
+}
+footer .top h2 {
+  font-family: Medium500;
+  font-size: 30px;
+  color: white;
+}
+footer .top h5 {
+  font-family: Regular400;
+  font-size: 16px;
+  font-weight: 700;
+  color: #5E5E5E;
+  margin-bottom: 30px;
+}
+footer .top .input {
+  margin-bottom: 10px;
+}
+footer .top .input input {
+  border: none;
+  outline: none;
+  height: 45px;
+  width: 60%;
+}
+footer .top .input button {
+  background-color: black;
+  border: 1px solid white !important;
+  border-radius: 2px;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  transition: all 0.4s;
+}
+footer .top .input button:hover {
+  background-color: #949393;
+}
+footer .top h6 {
+  font-family: Medium500;
+  font-size: 12px;
+  color: #75767c;
+  margin-bottom: 30px;
+}
+footer .bottom {
+  padding: 60px 100px;
+}
+footer .bottom .left {
+  width: 70%;
+}
+footer .bottom .left .logo {
+  width: 100%;
+}
+footer .bottom .left .logo img {
+  width: 45%;
+}
+footer .bottom .left p {
+  font-family: Regular400;
+  font-size: 14px;
+  margin: 20px 0;
+}
+footer .bottom .left h3 {
+  font-family: Regular400;
+  font-size: 14px;
+}
+footer .bottom h4 {
+  font-family: Bold600;
+  font-size: 16px;
+}
+footer .bottom a {
+  font-family: Regular400;
+  font-size: 15px;
+  display: block;
+  color: black;
+  margin: 5px 0;
+}
+footer .policy {
+  padding: 60px 100px;
+}
+footer .policy p {
+  font-family: Regular400;
+  font-size: 13px;
+}
+footer .policy a {
+  color: black;
+  font-family: Regular400;
+  font-size: 13px;
+  margin: 0 15px;
 }/*# sourceMappingURL=login.css.map */

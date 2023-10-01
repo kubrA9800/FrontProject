@@ -67,51 +67,6 @@ closeSearchIcon.addEventListener("click", function(e){
 
 })
 
-let links=document.querySelectorAll("#login-registr-all .head h2")
-
-links.forEach(link => {
-    link.addEventListener("click", function(){
-        let active=document.querySelector(".active")
-        active.classList.remove("active")
-        this.classList.add("active")
-
-        let id=this.getAttribute("data-id")
-
-        let boxs=document.querySelectorAll(".box")
-        for (const box of boxs) {
-            if(box.getAttribute("data-id")===id){
-                box.classList.remove("d-none")
-            }
-            else{
-                box.classList.add("d-none")
-            }
-            
-        }
-    })
-
-    
-});
-
-// let accountLogin=document.querySelector("#login-registr-all .head h2:nth-child(1)")
-// let accountRegister=document.querySelector("#login-registr-all .head h2:nth-child(2)")
-// let loginBox=document.querySelector("#login-registr-all .login")
-// let registrBox=document.querySelector("#login-registr-all .register")
-
-// accountLogin.addEventListener("click", function(){
-//     if(this.classList.contains("none-active")){
-//        this.classList.remove("none-active") 
-//        accountRegister.classList.add("none-active")
-//     }
-// })
-// accountRegister.addEventListener("click", function(){
-//     if(this.classList.contains("none-active")){
-//        this.classList.remove("none-active") 
-//        accountLogin.classList.add("none-active")
-//     }
-// })
-
-
-
 
 
 

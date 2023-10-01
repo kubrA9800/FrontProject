@@ -52,6 +52,7 @@
     width: 30%;
   }
   #contact .contact-box .left {
+    padding: 20px 0px !important;
     top: 0px !important;
   }
   #contact .contact-box .left .inputs {
@@ -99,6 +100,7 @@
     width: 30%;
   }
   #contact .contact-box .left {
+    padding: 20px 0px !important;
     top: 0px !important;
   }
   #contact .contact-box .left .inputs {
@@ -224,6 +226,9 @@ header .header-top .right-menu h4 {
 header .header-bottom {
   border-bottom: 1px solid #dee0ea;
 }
+header .header-bottom .link {
+  padding: 30px 0;
+}
 header .header-bottom .overlay {
   position: fixed;
   display: none;
@@ -312,9 +317,6 @@ header .header-bottom .nav-all {
   display: flex;
   align-items: center;
 }
-header .header-bottom .nav-all .link {
-  padding: 30px 0;
-}
 header .header-bottom .nav-all a {
   font-family: Medium500;
   font-size: 15px;
@@ -369,6 +371,29 @@ header .header-bottom .icons {
   display: flex;
   justify-content: flex-end;
 }
+header .header-bottom .icons .basket a {
+  position: relative;
+}
+header .header-bottom .icons .basket .basket-box {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #dee0ea;
+  z-index: 6;
+  right: 0px;
+  top: 40px;
+  text-align: center;
+  padding: 20px 60px;
+  border-radius: 3px;
+}
+header .header-bottom .icons .basket .basket-box i {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #ee403d;
+}
+header .header-bottom .icons .basket .basket-box h4 {
+  font-family: Medium500;
+  font-size: 14px;
+}
 header .header-bottom .icons div {
   margin-left: 20px;
   font-size: 20px;
@@ -379,7 +404,7 @@ header .header-bottom .icons a {
 }
 header .header-bottom .icons a .count {
   position: absolute;
-  top: -5px;
+  top: 25px;
   right: -6px;
   font-size: 10px;
   color: white;

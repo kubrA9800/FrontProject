@@ -102,7 +102,7 @@
                                     <a href="">Men</a>
                                     <a href="">Outwear</a>
                                     <a href="">Blog</a>
-                                    <a href="contact.html">Contact</a>
+                                    <a href="">Contact</a>
                                 </div>
                                 <hr>
                                 <div class="text">
@@ -213,8 +213,8 @@
                             <a class="link" href="">WOMEN</a>
                             <a class="link" href="">MEN</a>
                             <a class="link" href="">OUTWEAR</a>
-                            <a class="link" href="">BLOG</a>
-                            <a class="link" href="">CONTACT</a>
+                            <a class="link" href="blog.html">BLOG</a>
+                            <a class="link" href="contact.html">CONTACT</a>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -227,12 +227,15 @@
 
                             </div>
                             <div class="wishlist">
-                                <a href=""><i class="fa-regular fa-heart"></i><span class="count">0</span></a>
+                                <a class="link" href="wishlist.html"><i class="fa-regular fa-heart"></i><span class="count">0</span></a>
                             </div>
-                            <div class="basket">
-                                <a href=""><span style="margin-right: 10px;">$0.00</span><i
+                            <div class="basket open">
+                                <a class="link" href="cart.html"><span style="margin-right: 10px;">$0.00</span><i
                                         class="fa-solid fa-bag-shopping"></i><span class="count">0</span></a>
-
+                                    <div class="basket-box d-none">
+                                        <i class="fa-brands fa-shopify"></i>
+                                        <h4>No products in the cart.</h4>
+                                    </div>
                             </div>
                             <i class="fa-solid fa-x close d-none"></i>
                         </div>
@@ -262,51 +265,56 @@
                 <div class="slider">
                     <div id="carouselExampleDark" class="carousel carousel-dark slide">
                         <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
-                          <div class="carousel-item active slide-image" data-bs-interval="10000">
-                            <img src="./assets/images/slider-04.jpg" class="d-block w-100" alt="...">
-                            <div class="text">
-                                <h6>WINTER 2022 COLLECTION</h6>
-                                <h1>Valentin Paul Essential Collection</h1>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
-                                <a href="">Shop Collection<i class="fa-solid fa-arrow-right-long"></i></a>
+                            <div class="carousel-item active slide-image" data-bs-interval="10000">
+                                <img src="./assets/images/slider-04.jpg" class="d-block w-100" alt="...">
+                                <div class="text">
+                                    <h6>WINTER 2022 COLLECTION</h6>
+                                    <h1>Valentin Paul Essential Collection</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                                    <a href="">Shop Collection<i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
                             </div>
-                          </div>
-                          <div class="carousel-item slide-image" data-bs-interval="2000">
-                            <img src="./assets/images/slider-05.jpg" class="d-block w-100" alt="...">
-                            <div class="text">
-                                <h6>WINTER 2022 COLLECTION</h6>
-                                <h1>Making someone feel pretty as an art</h1>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
-                                <a href="">Shop Collection<i class="fa-solid fa-arrow-right-long"></i></a>
+                            <div class="carousel-item slide-image" data-bs-interval="2000">
+                                <img src="./assets/images/slider-05.jpg" class="d-block w-100" alt="...">
+                                <div class="text">
+                                    <h6>WINTER 2022 COLLECTION</h6>
+                                    <h1>Making someone feel pretty as an art</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                                    <a href="">Shop Collection<i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
                             </div>
-                          </div>
-                          <div class="carousel-item slide-image">
-                            <img src="./assets/images/slider-06.jpg" class="d-block w-100" alt="...">
-                            <div class="text">
-                                <h6>WINTER 2022 COLLECTION</h6>
-                                <h1>Valentin Paul Essential Collection</h1>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
-                                <a href="">Shop Collection<i class="fa-solid fa-arrow-right-long"></i></a>
+                            <div class="carousel-item slide-image">
+                                <img src="./assets/images/slider-06.jpg" class="d-block w-100" alt="...">
+                                <div class="text">
+                                    <h6>WINTER 2022 COLLECTION</h6>
+                                    <h1>Valentin Paul Essential Collection</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                                    <a href="">Shop Collection<i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
                         </button>
-                      </div>
+                    </div>
                 </div>
             </div>
-           
+
 
         </section>
 
@@ -321,14 +329,16 @@
                         </div>
                         <div class="col-sm-12 col-lg-7">
                             <div class="texts">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
-            </div>
-            
-            
+
+
         </section>
     </main>
 
