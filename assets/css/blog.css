@@ -459,6 +459,129 @@ header .header-bottom .search-modal p {
   margin-top: 20px;
 }
 
+#blog .blog-all .box {
+  margin-top: 90px;
+}
+#blog .blog-all .box a {
+  display: block;
+  margin: 20px 0;
+}
+#blog .blog-all .box a:nth-of-type(1) {
+  color: #75767C;
+  font-family: Regular500;
+  font-size: 16px;
+}
+#blog .blog-all .box a span {
+  color: black;
+}
+#blog .blog-all .box a:nth-of-type(2) {
+  font-family: Medium500;
+  font-size: 38px;
+  color: black;
+}
+#blog .blog-all .box a:nth-of-type(3) {
+  color: #75767C;
+  font-family: Medium500;
+  font-size: 16px;
+}
+#blog .blog-all .box p {
+  color: #75767C;
+  font-family: Regular400;
+  font-size: 16px;
+}
+#blog .blog-all .buttons {
+  text-align: center;
+  align-items: center;
+  margin: 60px 0;
+}
+#blog .blog-all .buttons a {
+  padding: 8px 14px;
+}
+#blog .blog-all .buttons a:nth-of-type(1) {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+#blog .blog-all .buttons a:nth-of-type(2) {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+}
+#blog .blog-all .buttons i {
+  margin-left: 20px;
+}
+#blog .blog-all .post-all {
+  position: sticky;
+  top: 0;
+  margin-top: 90px;
+}
+#blog .blog-all .post-all h3 {
+  font-family: Medium500;
+  font-size: 16px;
+}
+#blog .blog-all .post-all .search {
+  margin-bottom: 30px;
+  border: 1px solid #dee0ea;
+}
+#blog .blog-all .post-all .search input {
+  border: none;
+  outline: none;
+  height: 40px;
+}
+#blog .blog-all .post-all .search i {
+  color: #75767C;
+  margin-left: 80px;
+}
+#blog .blog-all .post-all .posts .item {
+  display: flex;
+  margin-bottom: 30px;
+}
+#blog .blog-all .post-all .posts .item .image {
+  width: 50%;
+}
+#blog .blog-all .post-all .posts .item .image img {
+  width: 100%;
+}
+#blog .blog-all .post-all .posts .item .text {
+  width: 100%;
+  margin-left: 30px;
+}
+#blog .blog-all .post-all .posts .item .text a {
+  display: block;
+  color: black;
+}
+#blog .blog-all .post-all .posts .item .text a:nth-of-type(1) {
+  font-family: Regular400;
+  font-size: 12px;
+}
+#blog .blog-all .post-all .posts .item .text a:nth-of-type(2) {
+  font-family: Medium500;
+  font-size: 16px;
+}
+#blog .blog-all .post-all .categories {
+  margin: 30px 0;
+}
+#blog .blog-all .post-all .categories .links {
+  margin: 30px 0;
+}
+#blog .blog-all .post-all .categories .links a {
+  display: block;
+  color: black;
+  font-family: Regular400;
+  font-size: 14px;
+}
+#blog .blog-all .post-all .categories .links a span {
+  margin-left: 10px;
+}
+#blog .blog-all .post-all .tags-all .tags a {
+  border: 1px solid #dee0ea;
+  color: black;
+  font-family: Regular400;
+  font-size: 14px;
+  padding: 5px 12px;
+  line-height: 40px;
+}
+
 footer .top {
   background-color: black;
   padding: 60px 100px;
