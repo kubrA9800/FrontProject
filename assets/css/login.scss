@@ -153,6 +153,19 @@ a {
     text-decoration: none;
 }
 
+.register-slider-noActive{
+    transform: translate(506px, -270px);
+}
+.register-slider-active{
+    transform: translate(0px, -270px);
+}
+.login-slider-noActive{
+    transform: translate(-490px, 0px);
+}
+.login-slider-active{
+    transform: translate(0px, 0px);
+}
+
 header {
     .header-top {
         padding: 10px 0;
@@ -599,11 +612,14 @@ header {
     }
 }
 
+
+
+
 #login-registr-all {
     
 
     .form-all{
-        
+        overflow: hidden;
         
         margin: 70px auto;
         width: 33%;
@@ -627,6 +643,7 @@ header {
     
         }
         .box {
+transition: all .5s;
             h4,
             label {
                 font-family: Regular400;
@@ -686,11 +703,9 @@ header {
             }
 
         }
-        // .register{
+        
             
-        //     position: absolute;
-        //     top: 129px;
-        // }
+            
     }
     
 }

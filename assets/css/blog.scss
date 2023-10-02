@@ -675,8 +675,12 @@ header {
         }
 
         .post-all {
-            position: sticky;
-            top: 0;
+            // position: sticky;
+            // top: 0;
+            .all{
+                position: sticky;
+                top: 0;
+               }
             h3 {
                 font-family: Medium500;
                 font-size: 16px;

@@ -77,38 +77,27 @@ links.forEach(link => {
 
         let id=this.getAttribute("data-id")
 
-        let boxs=document.querySelectorAll(".box")
-        for (const box of boxs) {
-            if(box.getAttribute("data-id")===id){
-                box.classList.remove("d-none")
-            }
-            else{
-                box.classList.add("d-none")
-            }
-            
+        if(id == 1){
+            document.querySelector(".form-all .login").classList.add("login-slider-active");
+            document.querySelector(".form-all .login").classList.remove("login-slider-noActive");
+            document.querySelector(".register").classList.remove("register-slider-active");
+            document.querySelector(".register").classList.add("register-slider-noActive");
+            document.querySelector(".register").style.visibility = "hidden";
+            document.querySelector(".form-all .login").style.visibility = "visible";
+
+        }else{
+            document.querySelector(".form-all .login").classList.add("login-slider-noActive");
+            document.querySelector(".register").classList.remove("register-slider-noActive");
+            document.querySelector(".register").classList.add("register-slider-active");
+            document.querySelector(".form-all .login").style.visibility = "hidden";
+            document.querySelector(".register").style.visibility = "visible";
         }
     })
 
     
 });
 
-// let accountLogin=document.querySelector("#login-registr-all .head h2:nth-child(1)")
-// let accountRegister=document.querySelector("#login-registr-all .head h2:nth-child(2)")
-// let loginBox=document.querySelector("#login-registr-all .login")
-// let registrBox=document.querySelector("#login-registr-all .register")
 
-// accountLogin.addEventListener("click", function(){
-//     if(this.classList.contains("none-active")){
-//        this.classList.remove("none-active") 
-//        accountRegister.classList.add("none-active")
-//     }
-// })
-// accountRegister.addEventListener("click", function(){
-//     if(this.classList.contains("none-active")){
-//        this.classList.remove("none-active") 
-//        accountLogin.classList.add("none-active")
-//     }
-// })
 
 
 

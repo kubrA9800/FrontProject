@@ -100,6 +100,22 @@ a {
   text-decoration: none;
 }
 
+.register-slider-noActive {
+  transform: translate(506px, -270px);
+}
+
+.register-slider-active {
+  transform: translate(0px, -270px);
+}
+
+.login-slider-noActive {
+  transform: translate(-490px, 0px);
+}
+
+.login-slider-active {
+  transform: translate(0px, 0px);
+}
+
 header .header-top {
   padding: 10px 0;
   border-bottom: 1px solid #dee0ea;
@@ -460,6 +476,7 @@ header .header-bottom .search-modal p {
 }
 
 #login-registr-all .form-all {
+  overflow: hidden;
   margin: 70px auto;
   width: 33%;
   padding: 50px 50px 120px 50px;
@@ -479,6 +496,9 @@ header .header-bottom .search-modal p {
   font-size: 17px;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.321);
+}
+#login-registr-all .form-all .box {
+  transition: all 0.5s;
 }
 #login-registr-all .form-all .box h4,
 #login-registr-all .form-all .box label {

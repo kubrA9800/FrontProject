@@ -511,9 +511,11 @@ header .header-bottom .search-modal p {
   margin-left: 20px;
 }
 #blog .blog-all .post-all {
+  margin-top: 90px;
+}
+#blog .blog-all .post-all .all {
   position: sticky;
   top: 0;
-  margin-top: 90px;
 }
 #blog .blog-all .post-all h3 {
   font-family: Medium500;

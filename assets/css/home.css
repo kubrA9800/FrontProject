@@ -47,6 +47,18 @@
   .slide-image .text .text {
     width: 30%;
   }
+  #new-collections {
+    padding: 0% !important;
+  }
+  #new-collections .collection-left {
+    margin-bottom: 80px;
+  }
+  #new-collections .collection-left .text {
+    padding: 0% !important;
+  }
+  #new-collections .collection-right {
+    padding: 0% !important;
+  }
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
   .header-top {
@@ -84,6 +96,18 @@
   }
   .slide-image .text .text {
     width: 30%;
+  }
+  #new-collections {
+    padding: 0% !important;
+  }
+  #new-collections .collection-left {
+    margin-bottom: 80px;
+  }
+  #new-collections .collection-left .text {
+    padding: 0% !important;
+  }
+  #new-collections .collection-right {
+    padding: 0% !important;
   }
 }
 a {
@@ -490,4 +514,77 @@ header .header-bottom .search-modal p {
   font-family: Regular400;
   font-size: 17px;
   color: #75767C;
+}
+
+#new-collections .collections-all {
+  padding: 5rem 0;
+}
+#new-collections .collections-all .collection-left .text {
+  padding-left: 110px;
+  margin-top: 40px;
+}
+#new-collections .collections-all .collection-left .text p {
+  font-family: Regular400;
+  font-size: 16px;
+  color: #75767c;
+}
+#new-collections .collections-all .collection-left .text h5 {
+  font-family: Medium500;
+  font-size: 15px;
+}
+#new-collections .collections-all .collection-right {
+  padding: 0 80px;
+}
+#new-collections .collections-all .collection-right .text h5 {
+  font-family: Medium500;
+  font-size: 12px;
+  font-weight: 600;
+}
+#new-collections .collections-all .collection-right .text h1 {
+  font-family: Regular400;
+  font-size: 48px;
+}
+#new-collections .collections-all .collection-right .text p {
+  font-family: Regular400;
+  font-size: 17px;
+  color: #75767C;
+  margin-bottom: 50px;
+}
+#new-collections .collections-all .collection-right .text a {
+  color: #212529;
+  font-family: Medium500;
+  font-size: 15px;
+  padding: 8px 15px;
+  border: 1px solid #dee0ea;
+}
+#new-collections .collections-all .collection-right .text a span {
+  margin-right: 15px;
+}
+#new-collections .collections-all .collection-right .image {
+  width: 100%;
+  margin-top: 8rem;
+}
+
+#chanel-logo {
+  background-color: #EDF2F9;
+}
+#chanel-logo .chanel-logo-all {
+  text-align: center;
+  padding: 7rem 0;
+}
+#chanel-logo .chanel-logo-all .text {
+  margin: 0 auto;
+  width: 55%;
+  padding: 30px 0;
+}
+#chanel-logo .chanel-logo-all .text p {
+  font-family: Regular400;
+  font-size: 26px;
+}
+#chanel-logo .chanel-logo-all h5 {
+  font-family: Bold600;
+  font-size: 12px;
+  color: #9f9f9f;
+  font-weight: 700;
+  margin-top: 20px;
 }/*# sourceMappingURL=home.css.map */
