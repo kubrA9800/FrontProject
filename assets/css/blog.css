@@ -462,6 +462,12 @@ header .header-bottom .search-modal p {
 #blog .blog-all .box {
   margin-top: 90px;
 }
+#blog .blog-all .box .image {
+  width: 100%;
+}
+#blog .blog-all .box .image img {
+  width: 100%;
+}
 #blog .blog-all .box a {
   display: block;
   margin: 20px 0;
@@ -511,11 +517,9 @@ header .header-bottom .search-modal p {
   margin-left: 20px;
 }
 #blog .blog-all .post-all {
-  margin-top: 90px;
-}
-#blog .blog-all .post-all .all {
   position: sticky;
   top: 0;
+  margin-top: 90px;
 }
 #blog .blog-all .post-all h3 {
   font-family: Medium500;
@@ -574,6 +578,9 @@ header .header-bottom .search-modal p {
 }
 #blog .blog-all .post-all .categories .links a span {
   margin-left: 10px;
+}
+#blog .blog-all .post-all .tags-all {
+  margin-bottom: 40px;
 }
 #blog .blog-all .post-all .tags-all .tags a {
   border: 1px solid #dee0ea;

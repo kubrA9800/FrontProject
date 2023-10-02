@@ -37,8 +37,13 @@
     top: 61px !important;
     left: 0px;
   }
-  .slide-image .text .text {
-    width: 30%;
+  .slide-image .text {
+    top: 18px !important;
+    left: 60px !important;
+    width: 80% !important;
+  }
+  .slide-image .text h1 {
+    font-size: 30px !important;
   }
   #new-collections-top {
     padding: 0% !important;
@@ -61,6 +66,13 @@
   #chanel-logo .chanel-logo-all p {
     font-family: Regular400;
     font-size: 16px !important;
+  }
+  #new-collections-bottom .text {
+    margin-top: 30px !important;
+    padding: 0% !important;
+  }
+  #new-collections-bottom .text h1 {
+    font-size: 24px !important;
   }
   #banner .text {
     top: 30px !important;
@@ -109,8 +121,13 @@
   .icons .close {
     display: none;
   }
-  .slide-image .text .text {
-    width: 30%;
+  .slide-image .text {
+    top: 18px !important;
+    left: 60px !important;
+    width: 80% !important;
+  }
+  .slide-image .text h1 {
+    font-size: 20px !important;
   }
   #new-collections-top {
     padding: 0% !important;
@@ -133,6 +150,13 @@
   #chanel-logo .chanel-logo-all p {
     font-family: Regular400;
     font-size: 16px !important;
+  }
+  #new-collections-bottom .text {
+    margin-top: 30px !important;
+    padding: 0% !important;
+  }
+  #new-collections-bottom .text h1 {
+    font-size: 24px !important;
   }
   #banner .text {
     top: 40px !important;
@@ -537,9 +561,9 @@ header .header-bottom .search-modal p {
 }
 #slider .slide-image .text {
   position: absolute;
-  top: 70px;
+  top: 50px;
   left: 110px;
-  width: 40%;
+  width: 50%;
   font-family: Regular400;
 }
 #slider .slide-image .text h6 {
@@ -548,7 +572,7 @@ header .header-bottom .search-modal p {
 }
 #slider .slide-image .text h1 {
   margin-bottom: 20px;
-  font-size: 60px;
+  font-size: 50px;
 }
 #slider .slide-image .text p {
   font-size: 16px;
@@ -574,6 +598,12 @@ header .header-bottom .search-modal p {
 
 #new-collections-top .collections-all {
   padding: 5rem 0;
+}
+#new-collections-top .collections-all .collection-left .image {
+  width: 100%;
+}
+#new-collections-top .collections-all .collection-left .image img {
+  width: 100%;
 }
 #new-collections-top .collections-all .collection-left .text {
   padding-left: 110px;
@@ -625,6 +655,9 @@ header .header-bottom .search-modal p {
   width: 100%;
   margin-top: 8rem;
 }
+#new-collections-top .collections-all .collection-right .image img {
+  width: 100%;
+}
 
 #chanel-logo {
   background-color: #EDF2F9;
@@ -668,6 +701,12 @@ header .header-bottom .search-modal p {
 
 #new-collections-bottom .collections-all {
   padding: 5rem 0;
+}
+#new-collections-bottom .collections-all .image {
+  width: 100%;
+}
+#new-collections-bottom .collections-all .image img {
+  width: 100%;
 }
 #new-collections-bottom .collections-all .text {
   padding: 0 80px;

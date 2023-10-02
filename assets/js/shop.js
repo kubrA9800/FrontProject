@@ -71,4 +71,5 @@ closeSearchIcon.addEventListener("click", function(e){
 
 
 
+
 })

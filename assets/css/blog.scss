@@ -613,7 +613,12 @@ header {
 
         .box {
             margin-top: 90px;
-
+            .image{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
             a {
                 display: block;
                 margin: 20px 0;
@@ -675,12 +680,9 @@ header {
         }
 
         .post-all {
-            // position: sticky;
-            // top: 0;
-            .all{
-                position: sticky;
-                top: 0;
-               }
+            position: sticky;
+            top: 0;
+            
             h3 {
                 font-family: Medium500;
                 font-size: 16px;
@@ -704,6 +706,7 @@ header {
                     margin-left: 80px;
                 }
             }
+            
 
             .posts {
 
@@ -765,7 +768,9 @@ header {
             }
 
             .tags-all {
+                margin-bottom: 40px;
                 .tags {
+                    
                     a {
                         border: 1px solid #dee0ea;
                         color: black;

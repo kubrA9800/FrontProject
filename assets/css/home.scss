@@ -64,9 +64,14 @@
         left: 0px;
     }
 
-    .slide-image .text {
+    .slide-image {
         .text {
-            width: 30%;
+            top: 18px !important;
+            left: 60px !important;
+            width: 80% !important;
+            h1{
+                font-size: 30px !important;
+            }
         }
     }
 
@@ -102,10 +107,21 @@
             p {
                 font-family: Regular400;
                 font-size: 16px !important;
-                
+
             }
         }
 
+    }
+
+    #new-collections-bottom {
+        .text {
+            margin-top: 30px !important;
+            padding: 0% !important;
+
+            h1 {
+                font-size: 24px !important;
+            }
+        }
     }
 
     #banner {
@@ -113,17 +129,20 @@
             top: 30px !important;
             left: 20px !important;
             width: 90% !important;
-            h1{
+
+            h1 {
                 font-size: 20px !important;
             }
-            p{
+
+            p {
                 font-size: 12px !important;
                 margin-bottom: 20px !important;
             }
         }
     }
-    #latest-news{
-        .text{
+
+    #latest-news {
+        .text {
             width: 100% !important;
         }
     }
@@ -177,10 +196,16 @@
         }
     }
 
-    .slide-image .text {
-        .text {
-            width: 30%;
+    .slide-image {
+        .text{
+            top: 18px !important;
+            left: 60px !important;
+            width: 80% !important;
+            h1{
+                font-size: 20px !important;
+            }
         }
+        
     }
 
 
@@ -219,26 +244,39 @@
 
     }
 
+    #new-collections-bottom {
+        .text {
+            margin-top: 30px !important;
+            padding: 0% !important;
+
+            h1 {
+                font-size: 24px !important;
+            }
+        }
+    }
+
     #banner {
         .text {
             top: 40px !important;
             left: 20px !important;
             width: 90% !important;
-            h1{
+
+            h1 {
                 font-size: 30px !important;
             }
-            p{
+
+            p {
                 font-size: 16px !important;
             }
         }
     }
 
     #latest-news {
-        
-            .text{
-                width: 100% !important;
-            }
-        
+
+        .text {
+            width: 100% !important;
+        }
+
         .box-all {
             padding: 0% !important;
         }
@@ -246,19 +284,20 @@
 
 }
 
-@media only screen and (min-width: 992px) {
-    
-}
-@media all and (min-width: 992px) and (max-width: 1200px){
+@media only screen and (min-width: 992px) {}
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
     #banner {
         .text {
             top: 80px !important;
             left: 60px !important;
             width: 80% !important;
-            h1{
+
+            h1 {
                 font-size: 40px !important;
             }
-            p{
+
+            p {
                 font-size: 18px !important;
                 margin-bottom: 40px !important;
             }
@@ -727,9 +766,9 @@ header {
 
         .text {
             position: absolute;
-            top: 70px;
+            top: 50px;
             left: 110px;
-            width: 40%;
+            width: 50%;
             font-family: Regular400;
 
             h6 {
@@ -740,7 +779,7 @@ header {
 
             h1 {
                 margin-bottom: 20px;
-                font-size: 60px;
+                font-size: 50px;
             }
 
             p {
@@ -788,6 +827,14 @@ header {
         padding: 5rem 0;
 
         .collection-left {
+            .image {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
             .text {
                 padding-left: 110px;
                 margin-top: 40px;
@@ -850,6 +897,10 @@ header {
             .image {
                 width: 100%;
                 margin-top: 8rem;
+
+                img {
+                    width: 100%;
+                }
             }
         }
     }
@@ -911,6 +962,14 @@ header {
 #new-collections-bottom {
     .collections-all {
         padding: 5rem 0;
+
+        .image {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
 
         .text {
             padding: 0 80px;
