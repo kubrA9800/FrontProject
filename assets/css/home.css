@@ -28,13 +28,6 @@
   .wishlist {
     display: none;
   }
-  .sidebar {
-    width: 50% !important;
-  }
-  .sidebar a {
-    display: flex;
-    justify-content: flex-start;
-  }
   .icons .close {
     display: none;
   }
@@ -47,17 +40,42 @@
   .slide-image .text .text {
     width: 30%;
   }
-  #new-collections {
+  #new-collections-top {
     padding: 0% !important;
   }
-  #new-collections .collection-left {
+  #new-collections-top .collection-left {
     margin-bottom: 80px;
   }
-  #new-collections .collection-left .text {
+  #new-collections-top .collection-left .text {
     padding: 0% !important;
   }
-  #new-collections .collection-right {
+  #new-collections-top .collection-right {
     padding: 0% !important;
+  }
+  #chanel-logo .chanel-logo-all {
+    padding: 2rem 0 !important;
+  }
+  #chanel-logo .chanel-logo-all .text {
+    width: 90% !important;
+  }
+  #chanel-logo .chanel-logo-all p {
+    font-family: Regular400;
+    font-size: 16px !important;
+  }
+  #banner .text {
+    top: 30px !important;
+    left: 20px !important;
+    width: 90% !important;
+  }
+  #banner .text h1 {
+    font-size: 20px !important;
+  }
+  #banner .text p {
+    font-size: 12px !important;
+    margin-bottom: 20px !important;
+  }
+  #latest-news .text {
+    width: 100% !important;
   }
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
@@ -82,9 +100,6 @@
   .wishlist {
     display: none;
   }
-  .sidebar {
-    width: 50% !important;
-  }
   .search-modal {
     position: absolute;
     top: 72px !important;
@@ -97,17 +112,58 @@
   .slide-image .text .text {
     width: 30%;
   }
-  #new-collections {
+  #new-collections-top {
     padding: 0% !important;
   }
-  #new-collections .collection-left {
+  #new-collections-top .collection-left {
     margin-bottom: 80px;
   }
-  #new-collections .collection-left .text {
+  #new-collections-top .collection-left .text {
     padding: 0% !important;
   }
-  #new-collections .collection-right {
+  #new-collections-top .collection-right {
     padding: 0% !important;
+  }
+  #chanel-logo .chanel-logo-all {
+    padding: 2rem 0 !important;
+  }
+  #chanel-logo .chanel-logo-all .text {
+    width: 90% !important;
+  }
+  #chanel-logo .chanel-logo-all p {
+    font-family: Regular400;
+    font-size: 16px !important;
+  }
+  #banner .text {
+    top: 40px !important;
+    left: 20px !important;
+    width: 90% !important;
+  }
+  #banner .text h1 {
+    font-size: 30px !important;
+  }
+  #banner .text p {
+    font-size: 16px !important;
+  }
+  #latest-news .text {
+    width: 100% !important;
+  }
+  #latest-news .box-all {
+    padding: 0% !important;
+  }
+}
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  #banner .text {
+    top: 80px !important;
+    left: 60px !important;
+    width: 80% !important;
+  }
+  #banner .text h1 {
+    font-size: 40px !important;
+  }
+  #banner .text p {
+    font-size: 18px !important;
+    margin-bottom: 40px !important;
   }
 }
 a {
@@ -516,51 +572,56 @@ header .header-bottom .search-modal p {
   color: #75767C;
 }
 
-#new-collections .collections-all {
+#new-collections-top .collections-all {
   padding: 5rem 0;
 }
-#new-collections .collections-all .collection-left .text {
+#new-collections-top .collections-all .collection-left .text {
   padding-left: 110px;
   margin-top: 40px;
 }
-#new-collections .collections-all .collection-left .text p {
+#new-collections-top .collections-all .collection-left .text p {
   font-family: Regular400;
   font-size: 16px;
   color: #75767c;
 }
-#new-collections .collections-all .collection-left .text h5 {
+#new-collections-top .collections-all .collection-left .text h5 {
   font-family: Medium500;
   font-size: 15px;
 }
-#new-collections .collections-all .collection-right {
+#new-collections-top .collections-all .collection-right {
   padding: 0 80px;
 }
-#new-collections .collections-all .collection-right .text h5 {
+#new-collections-top .collections-all .collection-right .text h5 {
   font-family: Medium500;
   font-size: 12px;
   font-weight: 600;
 }
-#new-collections .collections-all .collection-right .text h1 {
+#new-collections-top .collections-all .collection-right .text h1 {
   font-family: Regular400;
   font-size: 48px;
 }
-#new-collections .collections-all .collection-right .text p {
+#new-collections-top .collections-all .collection-right .text p {
   font-family: Regular400;
   font-size: 17px;
   color: #75767C;
   margin-bottom: 50px;
 }
-#new-collections .collections-all .collection-right .text a {
+#new-collections-top .collections-all .collection-right .text a {
   color: #212529;
   font-family: Medium500;
   font-size: 15px;
   padding: 8px 15px;
   border: 1px solid #dee0ea;
+  transition: all 0.4s;
 }
-#new-collections .collections-all .collection-right .text a span {
+#new-collections-top .collections-all .collection-right .text a span {
   margin-right: 15px;
 }
-#new-collections .collections-all .collection-right .image {
+#new-collections-top .collections-all .collection-right .text a:hover {
+  background-color: #75767c;
+  color: white;
+}
+#new-collections-top .collections-all .collection-right .image {
   width: 100%;
   margin-top: 8rem;
 }
@@ -587,4 +648,176 @@ header .header-bottom .search-modal p {
   color: #9f9f9f;
   font-weight: 700;
   margin-top: 20px;
+}
+
+#brands-carousel .carousel-all {
+  padding: 3rem 0;
+}
+#brands-carousel .carousel-all .slides {
+  width: 60%;
+  cursor: pointer;
+}
+#brands-carousel .carousel-all .slides img {
+  width: 70%;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+#brands-carousel .carousel-all .slides img:hover {
+  opacity: 1;
+}
+
+#new-collections-bottom .collections-all {
+  padding: 5rem 0;
+}
+#new-collections-bottom .collections-all .text {
+  padding: 0 80px;
+}
+#new-collections-bottom .collections-all .text .text-top {
+  margin-bottom: 4rem;
+}
+#new-collections-bottom .collections-all .text .text-top h5 {
+  font-family: Medium500;
+  font-size: 12px;
+  font-weight: 600;
+}
+#new-collections-bottom .collections-all .text .text-top h1 {
+  font-family: Regular400;
+  font-size: 48px;
+}
+#new-collections-bottom .collections-all .text .text-top p {
+  font-family: Regular400;
+  font-size: 17px;
+  color: #75767C;
+  margin-bottom: 50px;
+}
+#new-collections-bottom .collections-all .text .text-top a {
+  color: #212529;
+  font-family: Medium500;
+  font-size: 15px;
+  padding: 8px 15px;
+  border: 1px solid #dee0ea;
+  transition: all 0.4s;
+}
+#new-collections-bottom .collections-all .text .text-top a span {
+  margin-right: 15px;
+}
+#new-collections-bottom .collections-all .text .text-top a:hover {
+  background-color: #75767c;
+  color: white;
+}
+#new-collections-bottom .collections-all .text .text-down {
+  margin-top: 4rem;
+}
+#new-collections-bottom .collections-all .text .text-down .rating {
+  margin-bottom: 20px;
+}
+#new-collections-bottom .collections-all .text .text-down .rating i {
+  color: #edbc30;
+  font-size: 12px;
+}
+#new-collections-bottom .collections-all .text .text-down .rating span {
+  font-family: Regular400;
+  font-size: 13px;
+  color: #75767c;
+}
+#new-collections-bottom .collections-all .text .text-down p {
+  font-family: Regular400;
+  font-size: 16px;
+  color: #75767c;
+}
+#new-collections-bottom .collections-all .text .text-down h5 {
+  font-family: Medium500;
+  font-size: 15px;
+}
+
+#banner .banner-all {
+  position: relative;
+}
+#banner .banner-all .image {
+  width: 100%;
+}
+#banner .banner-all .image img {
+  width: 100%;
+}
+#banner .banner-all .text {
+  position: absolute;
+  top: 100px;
+  left: 70px;
+  width: 45%;
+}
+#banner .banner-all .text h5 {
+  font-family: Medium500;
+  font-size: 12px;
+  font-weight: 600;
+}
+#banner .banner-all .text h1 {
+  font-family: Regular400;
+  font-size: 48px;
+}
+#banner .banner-all .text p {
+  font-family: Regular400;
+  font-size: 17px;
+  color: #75767C;
+  margin-bottom: 50px;
+}
+#banner .banner-all .text a {
+  color: #212529;
+  font-family: Medium500;
+  font-size: 15px;
+  padding: 8px 15px;
+  border: 1px solid #dee0ea;
+}
+#banner .banner-all .text a span {
+  margin-right: 15px;
+}
+
+#latest-news .latest-news-all {
+  padding: 4rem 0;
+}
+#latest-news .latest-news-all .text {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+#latest-news .latest-news-all .text h1 {
+  font-family: Medium500;
+  font-size: 30px;
+}
+#latest-news .latest-news-all .text p {
+  font-family: Regular400;
+  font-size: 17px;
+  color: #75767C;
+}
+#latest-news .latest-news-all .box {
+  margin-top: 40px;
+}
+#latest-news .latest-news-all .box .image {
+  width: 100%;
+}
+#latest-news .latest-news-all .box .image img {
+  width: 100%;
+}
+#latest-news .latest-news-all .box a {
+  display: block;
+  margin: 20px 0;
+}
+#latest-news .latest-news-all .box a:nth-of-type(1) {
+  color: #75767C;
+  font-family: Regular500;
+  font-size: 16px;
+}
+#latest-news .latest-news-all .box a:nth-of-type(2) {
+  font-family: Medium500;
+  font-size: 22px;
+  color: black;
+}
+#latest-news .latest-news-all .box a:nth-of-type(3) {
+  color: #75767C;
+  font-family: Medium500;
+  font-size: 16px;
+}
+#latest-news .latest-news-all .box p {
+  color: #75767C;
+  font-family: Regular400;
+  font-size: 16px;
 }/*# sourceMappingURL=home.css.map */

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
         integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
@@ -227,15 +229,16 @@
 
                             </div>
                             <div class="wishlist">
-                                <a class="link" href="wishlist.html"><i class="fa-regular fa-heart"></i><span class="count">0</span></a>
+                                <a class="link" href="wishlist.html"><i class="fa-regular fa-heart"></i><span
+                                        class="count">0</span></a>
                             </div>
                             <div class="basket open">
                                 <a class="link" href="cart.html"><span style="margin-right: 10px;">$0.00</span><i
                                         class="fa-solid fa-bag-shopping"></i><span class="count">0</span></a>
-                                    <div class="basket-box d-none">
-                                        <i class="fa-brands fa-shopify"></i>
-                                        <h4>No products in the cart.</h4>
-                                    </div>
+                                <div class="basket-box d-none">
+                                    <i class="fa-brands fa-shopify"></i>
+                                    <h4>No products in the cart.</h4>
+                                </div>
                             </div>
                             <i class="fa-solid fa-x close d-none"></i>
                         </div>
@@ -341,7 +344,7 @@
 
         </section>
 
-        <section id="new-collections">
+        <section id="new-collections-top">
             <div class="container">
                 <hr>
                 <div class="collections-all">
@@ -352,7 +355,8 @@
                                     <img src="./assets/images/collection.jpg" alt="">
                                 </div>
                                 <div class="text">
-                                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                        suspendisse ultrices gravida.</p>
                                     <h5>Petra van der Meer</h5>
                                 </div>
                             </div>
@@ -362,7 +366,9 @@
                                 <div class="text">
                                     <h5>NEW COLLECTIONS</h5>
                                     <h1>Best Sweatshirts and tracksuits for everyone!</h1>
-                                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                        suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.</p>
                                     <a href=""><span>Shop Now</span><i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                                 <div class="image">
@@ -379,7 +385,8 @@
             <div class="chanel-logo-all">
                 <img src="./assets/images/chanel.png" alt="">
                 <div class="text">
-                    <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodobendo viverra maecenas accumsan lacus vel facilisis libero.</p>
+                    <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                        gravida. Risus commodobendo viverra maecenas accumsan lacus vel facilisis libero.</p>
                 </div>
                 <img src="./assets/images/chanel2.png" alt="">
                 <h5>CHANEL CEO</h5>
@@ -387,8 +394,165 @@
         </section>
 
         <section id="brands-carousel">
-            <div class="carousel-all">
-                
+            <div class="container">
+                <div class="carousel-all">
+                    <div data-slick='{"slidesToShow": 5, "slidesToScroll": 1}'>
+                        <div class="slides"><img src="./assets/images/carousel.png" alt=""></div>
+                        <div class="slides"><img src="./assets/images/carousel2.png" alt=""></div>
+                        <div class="slides"><img src="./assets/images/carousel3.png" alt=""></div>
+                        <div class="slides"><img src="./assets/images/carousel4.png" alt=""></div>
+                        <div class="slides"><img src="./assets/images/carousel5.png" alt=""></div>
+                        <div class="slides"><img src="./assets/images/carousel6.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="new-collections-bottom">
+            <div class="container">
+                <hr>
+                <div class="collections-all">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="image">
+                                <img src="./assets/images/collections.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="text">
+                                <div class="text-top">
+                                    <h5>NEW COLLECTIONS</h5>
+                                    <h1>Best Sweatshirts and tracksuits for everyone!</h1>
+                                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                        suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.</p>
+                                    <a href=""><span>Shop Now</span><i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                                <hr>
+                                <div class="text-down">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span>4.5 (10.000+) Rating</span>
+                                    </div>
+                                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                        suspendisse ultrices gravida.</p>
+                                    <h5>Petra van der Meer</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+
+        <section id="featured-products">
+            <div class="container">
+                <div class="content-all">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-5">
+                            <div class="titles">
+                                <h1>Featured Products</h1>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-7">
+                            <div class="texts">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                    gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="banner">
+            <div class="container">
+                <div class="col-12">
+                    <div class="banner-all">
+                        <div class="image">
+                            <img src="./assets/images/banner-box2.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h5>NEW COLLECTIONS</h5>
+                            <h1>Best Sweatshirts and tracksuits for everyone!</h1>
+                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+                                ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                            <a href=""><span>Shop Now</span><i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="latest-news">
+            <div class="container">
+                <div class="latest-news-all">
+                    <div class="col-12">
+                        <div class="text">
+                            <h1>Our Latest News</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra vel facilisis.</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="box-all">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-4">
+                                    <div class="box">
+                                        <div class="image">
+                                            <img src="./assets/images/blog-4.jpg" alt="">
+                                        </div>
+                                        
+                                        <a href="">COLLECTION - April 25, 2022</a>
+                                        <a href="">The Best Products That Shape Fashion</a>
+                                        <p>Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis
+                                            ultricies, ante eros</p>
+                                            
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-4">
+                                    <div class="box">
+                                        <div class="image">
+                                            <img src="./assets/images/blog-5.jpg" alt="">
+                                        </div>
+                                        
+                                        <a href="">COLLECTION - April 25, 2022 </a>
+                                        <a href="">New Finds From Tuckernuck</a>
+                                        <p>Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis
+                                            ultricies, ante eros</p>
+                                            
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-4">
+                                    <div class="box">
+                                        <div class="image">
+                                            <img src="./assets/images/blog-6.jpg" alt="">
+                                        </div>
+                                        
+                                        <a href="">COLLECTION - April 25, 2022</span></a>
+                                        <a href="">Sunset Sets From Saks</a>
+                                        <p>Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis
+                                            ultricies, ante eros</p>
+                                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -409,6 +573,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
         integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

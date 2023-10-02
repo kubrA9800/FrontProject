@@ -67,7 +67,7 @@ closeSearchIcon.addEventListener("click", function(e){
 
 })
 
-
+$('div[data-slick]').slick() 
 
 
 
