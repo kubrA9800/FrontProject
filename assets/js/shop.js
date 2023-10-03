@@ -71,6 +71,34 @@ closeSearchIcon.addEventListener("click", function(e){
 
 $(".swinger-container").swinger();
 
+let heartIcons=document.querySelectorAll(".product .icons .fa-heart");
+heartIcons.forEach(heartIcon => {
+    heartIcon.addEventListener("click", function(){
+        
+       this.parentNode.nextElementSibling.style.display="block"
+       this.parentNode.nextElementSibling.addEventListener("click", function(){
+        this.style.display="none"
+       })
+        
+    })
+    
+});
+
+let products=document.querySelectorAll(".product")
+
+products.forEach(product => {
+    product.onmouseover=function(){
+        this.children[2].classList.add("transforms")
+    }
+    product.onmouseout=function(){
+        this.children[2].classList.remove("transforms")
+        
+    }
+
+});
+
+
+
 
 
 
