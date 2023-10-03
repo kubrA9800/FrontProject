@@ -32,13 +32,14 @@ openSidebarIcon.addEventListener("click", function(){
     sidebar.classList.remove("move-sidebar")
 })
 
-closeSidebarIcon.addEventListener("click", function(){
-    sidebar.classList.add("move-sidebar")
-})
 
 let over=document.querySelector(".overlay")
 openSidebarIcon.addEventListener("click", function(){
     over.style.display = "block";
+})
+closeSidebarIcon.addEventListener("click", function(){
+    sidebar.classList.add("move-sidebar")
+    over.style.display="none"
 })
 over.addEventListener("click", function(){
     sidebar.classList.add("move-sidebar")

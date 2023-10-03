@@ -8,10 +8,10 @@ $.fn.swinger = function () {
         $images.css({
             "position": "absolute",
             "top": "0%",
-            "left": "0%",
-            "width": "100%"
+            "left": "6%",
+            "width": "90%"
         });
-        var $middleImage = $($images[Math.floor($images.length / 2)]);
+        var $middleImage = $($images[0]);
         $middleImage.css({
             "z-index": "2",
             "position": "relative"

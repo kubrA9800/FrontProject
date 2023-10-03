@@ -32,13 +32,15 @@ openSidebarIcon.addEventListener("click", function(){
     sidebar.classList.remove("move-sidebar")
 })
 
-closeSidebarIcon.addEventListener("click", function(){
-    sidebar.classList.add("move-sidebar")
-})
+
 
 let over=document.querySelector(".overlay")
 openSidebarIcon.addEventListener("click", function(){
     over.style.display = "block";
+})
+closeSidebarIcon.addEventListener("click", function(){
+    sidebar.classList.add("move-sidebar")
+    over.style.display="none"
 })
 over.addEventListener("click", function(){
     sidebar.classList.add("move-sidebar")
@@ -70,5 +72,43 @@ closeSearchIcon.addEventListener("click", function(e){
 $('div[data-slick]').slick() 
 
 
+$('.products-carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      
+    ]
+  });
+
+  
+
+
+$(".swinger-container").swinger();
 
 })
