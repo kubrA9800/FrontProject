@@ -716,46 +716,107 @@ header .header-bottom .search-modal p {
 
 .boxs {
   position: relative;
-  width: 70%;
+  width: 80%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: 0 auto;
   padding: 50px 40px;
   background-color: white;
-  bottom: 500px;
+  bottom: 700px;
   z-index: 10;
 }
 .boxs .image {
-  width: 70%;
+  width: 90%;
   margin: 20px 40px;
 }
 .boxs .image img {
   width: 100%;
 }
 .boxs .text-all {
-  width: 90%;
+  margin-top: 20px;
+  width: 80%;
 }
-.boxs .text-all .sale {
-  display: flex;
-  align-items: center;
+.boxs .text-all h1 {
+  font-family: Regular400;
+  font-size: 28px;
 }
-.boxs .text-all .sale h4 {
-  margin-left: 20px;
-  color: red;
+.boxs .text-all .reviews {
+  margin-bottom: 10px;
 }
-.boxs .text-all .bottom {
-  display: flex;
+.boxs .text-all .reviews span {
+  font-family: Medium500;
+  font-size: 13px;
+}
+.boxs .text-all .reviews i {
+  color: #f9c300;
+  font-size: 10px;
+}
+.boxs .text-all h2 {
+  font-family: Medium500;
+  font-size: 20px;
+}
+.boxs .text-all p {
+  font-family: Regular400;
+  font-size: 14px;
+}
+.boxs .text-all .stock {
+  font-family: Medium500;
+  font-size: 14px;
+  color: #47B486;
+  background-color: #e9fef5;
+  border-radius: 2px;
+  padding: 4px 10px;
+}
+.boxs .text-all .add-to-cart {
+  margin: 20px 0;
   justify-content: space-between;
-  width: 90%;
 }
-.boxs .text-all .border {
-  width: 90%;
+.boxs .text-all .add-to-cart .count {
+  border: 1px solid #dee0ea;
+  padding: 10px 15px;
+}
+.boxs .text-all .add-to-cart .count i {
+  font-size: 12px;
+}
+.boxs .text-all .add-to-cart .count span {
+  margin: 0 8px;
+}
+.boxs .text-all .add-to-cart .button {
+  width: 80%;
+}
+.boxs .text-all .add-to-cart .button button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  border: none;
+  transition: all 0.5s;
+}
+.boxs .text-all .add-to-cart .button button:hover {
+  background-color: #9f9f9f;
+}
+.boxs .text-all .add-to-wishlist a {
+  font-family: Regular400;
+  font-size: 14px;
+  color: black;
+  margin-right: 14px;
+}
+.boxs .text-all h4 {
+  font-family: Regular400;
+  font-size: 14px;
+  color: #dee0ea;
+}
+.boxs .text-all h4 span {
+  color: black;
 }
 .boxs .close {
   position: absolute;
-  top: -20px;
-  right: -20px;
-  font-size: 40px;
-  color: red;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  color: black;
+  border: 1px solid #dee0ea;
+  border-radius: 50%;
+  padding: 10px 12px;
   cursor: pointer;
 }
 

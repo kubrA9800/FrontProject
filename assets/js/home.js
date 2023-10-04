@@ -46,6 +46,7 @@ over.addEventListener("click", function(){
     sidebar.classList.add("move-sidebar")
     this.style.display = "none";
     modal.classList.add("d-none")
+    
 })
 
 let searchIcon=document.querySelector(".icons .search i")
