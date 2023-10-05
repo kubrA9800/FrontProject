@@ -335,7 +335,7 @@ header .header-bottom .logo .sidebar {
   width: 22%;
   height: 100vh;
   padding: 15px 25px;
-  z-index: 6 !important;
+  z-index: 1200;
   overflow-y: scroll;
 }
 header .header-bottom .logo .sidebar::-webkit-scrollbar {
@@ -715,18 +715,18 @@ header .header-bottom .search-modal p {
 }
 
 .boxs {
-  position: relative;
+  position: fixed;
+  z-index: 1102;
+  left: 140px;
+  top: 40px;
   width: 80%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin: 0 auto;
-  padding: 50px 40px;
+  height: 90%;
   background-color: white;
-  bottom: 700px;
-  z-index: 10;
+  padding: 50px 40px;
 }
 .boxs .image {
-  width: 90%;
-  margin: 20px 40px;
+  width: 66%;
+  margin-left: 60px;
 }
 .boxs .image img {
   width: 100%;
@@ -757,6 +757,12 @@ header .header-bottom .search-modal p {
 .boxs .text-all p {
   font-family: Regular400;
   font-size: 14px;
+}
+.boxs .text-all .product-size span {
+  color: black;
+  padding: 7px 30px;
+  line-height: 43px;
+  border: 1px solid rgba(0, 0, 0, 0.259);
 }
 .boxs .text-all .stock {
   font-family: Medium500;

@@ -46,6 +46,7 @@ over.addEventListener("click", function(){
     sidebar.classList.add("move-sidebar")
     this.style.display = "none";
     modal.classList.add("d-none")
+    body.style.overflowY="auto"
     
 })
 
@@ -184,13 +185,16 @@ openModalIcons.forEach(openModalIcon => {
         modal.children[0].children[0].children[0].children[0].setAttribute("src",productImg)
         let productName=this.parentNode.previousElementSibling.children[2].innerText
      modal.children[0].children[0].nextElementSibling.children[0].children[0].innerText=productName
-     
+     body.style.overflowY="hidden"
+
     }
 });
 iconClose.addEventListener("click", function () {
     over.style.display ="none";
     modal.classList.add("d-none")
-    
+    over.style.display = "none";
+    body.style.overflowY="auto"
+
     
 })
 
