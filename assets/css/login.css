@@ -17,6 +17,8 @@
   .header-bottom .logo {
     text-align: center;
     justify-content: space-between;
+    position: relative !important;
+    top: 20px !important;
   }
   .header-bottom .logo .image {
     width: 50%;
@@ -38,6 +40,9 @@
   .sidebar a {
     display: flex;
     justify-content: flex-start;
+  }
+  .basket a {
+    bottom: 15px !important;
   }
   .icons .close {
     display: none;
@@ -62,6 +67,8 @@
   .header-bottom .logo {
     text-align: center;
     justify-content: space-between;
+    position: relative !important;
+    top: 20px !important;
   }
   .header-bottom .logo .image {
     width: 50%;
@@ -88,6 +95,9 @@
   }
   .icons .close {
     display: none;
+  }
+  .basket a {
+    bottom: 20px !important;
   }
   .slide-image .text .text {
     width: 30%;

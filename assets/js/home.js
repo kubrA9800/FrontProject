@@ -198,4 +198,30 @@ iconClose.addEventListener("click", function () {
     
 })
 
+
+
+
+let productBtns=document.querySelectorAll(".product .images a")
+
+let basket = [];
+
+productBtns.forEach(productBtn => {
+  productBtn.onclick=function(){
+    
+    
+    let productImg=this.children[0].getAttribute("src");
+    let productName=this.parentNode.parentNode.nextElementSibling.children[2].innerText;
+    
+      basket.push({
+        name:productName,
+        image:productImg
+      })
+
+    localStorage.setItem("basket", JSON.stringify(basket))
+  }
+
+});
+
+
+
 })

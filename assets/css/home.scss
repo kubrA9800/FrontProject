@@ -18,10 +18,10 @@
     .header-bottom {
 
         .logo {
-            display: flex !important;
-            text-align: center !important;
+            text-align: center;
             justify-content: space-between;
-
+            position: relative !important;
+            top: 20px !important;
             .image {
                 width: 50%;
 
@@ -51,6 +51,11 @@
     //         justify-content: flex-start;
     //     }
     // }
+    .basket{
+        a{
+            bottom: 20px !important;
+        }
+    }
 
     .icons {
         .close {
@@ -157,10 +162,10 @@
 
     .header-bottom {
         .logo {
-            display: flex !important;
-            text-align: center !important;
+            text-align: center;
             justify-content: space-between;
-
+            position: relative !important;
+            top: 20px !important;
             .image {
                 width: 50%;
 
@@ -182,10 +187,11 @@
         display: none;
     }
 
-    // .sidebar {
-    //     width: 50% !important;
-    // }
-
+    .basket{
+        a{
+            bottom: 20px !important;
+        }
+    }
     .search-modal {
         position: absolute;
         top: 72px !important;

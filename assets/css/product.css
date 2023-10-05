@@ -17,6 +17,8 @@
   .header-bottom .logo {
     text-align: center;
     justify-content: space-between;
+    position: relative !important;
+    top: 20px !important;
   }
   .header-bottom .logo .image {
     width: 50%;
@@ -36,11 +38,16 @@
     width: 50% !important;
   }
   .sidebar a {
-    display: flex;
-    justify-content: flex-start;
+    text-align: start;
+  }
+  .basket a {
+    bottom: 20px !important;
   }
   .icons .close {
     display: none;
+  }
+  .basket a {
+    bottom: 15px !important;
   }
   .search-modal {
     width: 60%;
@@ -62,6 +69,8 @@
   .header-bottom .logo {
     text-align: center;
     justify-content: space-between;
+    position: relative !important;
+    top: 20px !important;
   }
   .header-bottom .logo .image {
     width: 50%;
@@ -80,6 +89,9 @@
   .sidebar {
     width: 50% !important;
   }
+  .sidebar .text a {
+    text-align: start !important;
+  }
   .search-modal {
     position: absolute;
     top: 72px !important;
@@ -88,6 +100,9 @@
   }
   .icons .close {
     display: none;
+  }
+  .basket a {
+    bottom: 20px !important;
   }
   .slide-image .text .text {
     width: 30%;

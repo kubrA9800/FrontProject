@@ -12,9 +12,10 @@
     display: none;
   }
   .header-bottom .logo {
-    display: flex !important;
-    text-align: center !important;
+    text-align: center;
     justify-content: space-between;
+    position: relative !important;
+    top: 20px !important;
   }
   .header-bottom .logo .image {
     width: 50%;
@@ -29,6 +30,9 @@
   .search,
   .wishlist {
     display: none;
+  }
+  .basket a {
+    bottom: 20px !important;
   }
   .icons .close {
     display: none;
@@ -97,9 +101,10 @@
     display: none;
   }
   .header-bottom .logo {
-    display: flex !important;
-    text-align: center !important;
+    text-align: center;
     justify-content: space-between;
+    position: relative !important;
+    top: 20px !important;
   }
   .header-bottom .logo .image {
     width: 50%;
@@ -114,6 +119,9 @@
   .search,
   .wishlist {
     display: none;
+  }
+  .basket a {
+    bottom: 20px !important;
   }
   .search-modal {
     position: absolute;

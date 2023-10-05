@@ -24,7 +24,8 @@
         .logo {
             text-align: center;
             justify-content: space-between;
-
+            position: relative !important;
+            top: 20px !important;
             .image {
                 width: 50%;
 
@@ -52,6 +53,11 @@
         a {
             display: flex;
             justify-content: flex-start;
+        }
+    }
+    .basket{
+        a{
+            bottom: 15px !important;
         }
     }
 
@@ -121,7 +127,8 @@
         .logo {
             text-align: center;
             justify-content: space-between;
-
+            position: relative !important;
+            top: 20px !important;
             .image {
                 width: 50%;
 
@@ -157,6 +164,11 @@
     .icons {
         .close {
             display: none;
+        }
+    }
+    .basket{
+        a{
+            bottom: 20px !important;
         }
     }
 
