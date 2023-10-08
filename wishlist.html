@@ -260,15 +260,70 @@
 
     </header>
 
-    <section id="wishlist">
+    <section id="carts-all">
         <div class="container">
-            <div class="wishlist">
+            <div class="cart-content">
                 <h2>Default wishlist</h2>
                 <h5>Your Wishlist is currently empty.</h5>
-                <a href="">Return To Shop</a>
+                <a href="shop.html">Return To Shop</a>
             </div>
         </div>
     </section>
+
+    <section id="cart">
+        <div class="container">
+          <div class="row">
+            <div class="col-9">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="padding-left: 100px">Image</th>
+                    <th style="padding-left: 50px">Name</th>
+                    <th>Count</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <div class="col-3">
+              <div class="all-price">
+                <p>Cart totals</p>
+                <hr/>
+                <div class="shipping-container">
+                  <p>Shipping</p>
+                  <ul>
+                    <li>
+                      <label for="">Free shipping</label>
+                      <input type="radio" name="" id="" />
+                    </li>
+                    <li>
+                      <label for="">Local pickup </label>
+                      <input type="radio" name="" id="" />
+                    </li>
+                    <li>
+                      <span>Shipping to <strong>AL.</strong> </span>
+                    </li>
+                    <li style="margin-top: 20px">
+                      <a href="">Change address</a>
+                    </li>
+                  </ul>
+                </div>
+                <hr />
+                <div class="price-container">
+                  <p class="price">Total:</p>
+                  <strong>
+                    <span style="font-size: 16px" class="total-price"></span>
+                  </strong>
+                </div>
+                <button class="checkoutBtn">Proceed to checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+</section>
 
     <footer>
         <div class="top">

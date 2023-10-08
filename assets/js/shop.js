@@ -182,7 +182,147 @@ openCategories.forEach(openCategory => {
 
 
 
+  let productBtns=document.querySelectorAll(".product .images a")
+  let basket = [];
+  
+  productBtns.forEach(productBtn => {
+    productBtn.onclick=function(){
+      
+      
+      let productImg=this.children[0].getAttribute("src");
+      let productName=this.parentNode.parentNode.nextElementSibling.children[2].innerText;
+      
+        basket.push({
+          name:productName,
+          image:productImg,
+          count:1
+        })
+  
+      localStorage.setItem("basket", JSON.stringify(basket))
+    }
+  
+  });
+  
+  let addToBasketIcons=document.querySelectorAll(".product .icons .fa-bag-shopping")
+  
+  let addToBasket=[]
+  
+  if (localStorage.getItem("addToBasket") != null) {
+    addToBasket = JSON.parse(localStorage.getItem("addToBasket"))
+  } else {
+    document.querySelector(".basket .count").innerText="0";
+  }
+  
+  if (addToBasket.length == 0) {
+    document.querySelector(".basket .count").innerText="0";
+  }
+  
+  
+  function basketCount() {
+    let basketCount = 0;
+    for (const item of addToBasket) {
+        basketCount += item.count;
+    }
+    return basketCount;
+  }
+  
+  
+  document.querySelector(".basket .count").innerText = basketCount();
+  
+  addToBasketIcons.forEach(addToBasketIcon => {
+    addToBasketIcon.addEventListener("click", function (e) {
+        e.preventDefault();
+        let productName = this.parentNode.parentNode.previousElementSibling.children[2].innerText
+        let productPrice = parseFloat(this.parentNode.parentNode.previousElementSibling.children[3].innerText.substring(1)) 
+        let productImg = this.parentNode.parentNode.previousElementSibling.previousElementSibling.children[0].children[0].children[0].getAttribute("src")
+        
+  
+        let existProduct = addToBasket.find(m => m.name == productName);
+  
+          if (existProduct != undefined) {
+              existProduct.count++;
+          } else {
+  
+            addToBasket.push({
+              image: productImg,
+              name: productName,
+              price: productPrice,
+              count:1
+      
+            })
+          }
+        
+        
+  
+          localStorage.setItem("addToBasket", JSON.stringify(addToBasket));
+      
+          document.querySelector(".basket .count").innerText = basketCount();
+          document.querySelector(".basket .count").classList.remove("d-none");
+      })
+    });
+  
+  
+    
 
+    let addToWishlist = []
 
+    let wishlistIcons = document.querySelectorAll(".product .icons .fa-heart")
+    
+    
+  
+    if (localStorage.getItem("addToWishlist") != null) {
+      addToWishlist = JSON.parse(localStorage.getItem("addToWishlist"))
+    } 
+    else {
+      document.querySelector(".wishlist .count").innerText="0"
+    }
+  
+    if (addToWishlist.length == 0) {
+      document.querySelector(".wishlist .count").innerText="0"
+    }
+  
+  
+    function wishlistCount() {
+      let wishlistCount = 0;
+      for (const item of addToWishlist) {
+        wishlistCount += item.count;
+      }
+      return wishlistCount;
+  }
+  
+  
+  document.querySelector(".wishlist .count").innerText = wishlistCount();
+  
+  wishlistIcons.forEach(wishlistIcon => {
+    wishlistIcon.addEventListener("click", function () {
+        let productName = this.parentNode.previousElementSibling.children[2].innerText
+        let productPrice = parseFloat(this.parentNode.previousElementSibling.children[3].innerText.substring(1)) 
+        let productImg = this.parentNode.previousElementSibling.previousElementSibling.children[0].children[0].children[0].getAttribute("src")
+  
+        let existProduct = addToWishlist.find(m => m.name == productName);
+  
+          if (existProduct != undefined) {
+              existProduct.count++;
+          } else {
+  
+            addToWishlist.push({
+              name: productName,
+              price: productPrice,
+              image: productImg,
+              count:1
+      
+            })
+          }
+        
+        
+  
+          localStorage.setItem("addToWishlist", JSON.stringify(addToWishlist));
+      
+          document.querySelector(".wishlist .count").innerText = wishlistCount();
+          document.querySelector(".wishlist .count").classList.remove("d-none");
+      })
+    });
+  
+  
 
 })
